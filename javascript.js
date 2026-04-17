@@ -12,4 +12,21 @@ function getComputerChoice() {
   }
 }
 
-console.log("Computer Choice: " + getComputerChoice());
+function getHumanChoice() {
+  if (userChoice == 1) {
+    return "Rock";
+  } else if (userChoice == 2) {
+    return "Paper";
+  } else if (userChoice == 3) {
+    return "Scissors";
+  }
+}
+
+/* console.log("Computer Choice: " + getComputerChoice()); */
+
+const userChoice = prompt("Chose: 1=Rock, 2=Paper, 3=Scissors");
+
+let computerChoice = getComputerChoice();
+let humanChoice = getHumanChoice();
+
+console.log("l'utilisateur a choisit: " + humanChoice);
