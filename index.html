@@ -5,7 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
-    <script src="javascript.js"></script>
+    <h1>Rock Paper and Scissors</h1>
+    <div id="getNbrRounds">
+      <h2>Nombre de rounds</h2>
+      <p>Combien de rounds voulez-vous jouer ?</p>
+      <input type="integer" class="nbrRounds" placeholder="Entrez un nombre" />
+      <button class="validNbrRounds">Ok</btn>
+    </div>
+        <div id="PlayGround">
+            <h2>PlayGround</h2>
+        <div class="beforeScore"></div>
+
+        <p>Numero du round: <span id="NumCurrentRound">-</span></p>
+        <p>Score du joueur: <span id="CurrentPlayerScore">-</span></p>
+        <p>Score de l'ordinateur: <span id="CurrentComputerScore">-</span></p>
+        <div class="gameButtons">
+            <button class="Rock">Rock</btn>
+            <button class="Paper">Paper</btn>
+            <button class="Scissors">Scissors</btn>
+        </div>
+            <p>Choix du joueur: <span id="PlayerChoice">-</span></p>
+            <p>Choix de l'ordinateur: <span id="ComputerChoice">-</span></p>
+    </div>
+    <div class="FinalResult">
+    </div>
+  <script src="javascript.js"></script>
   </body>
 </html>
